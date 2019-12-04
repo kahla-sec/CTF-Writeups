@@ -1,7 +1,10 @@
 # SecurinetsMiniCTF Writeups #
 Hello guys , you will find here writeups of SecurinetsMiniCTF tasks written by Kahla (Meeeeeee ! ) , i want to apologize for the lack of details in these solvers , i really didn't have enough time (exams are sooon :'( ) anyways don't hesitate and contact me if you had any problems 
 
-## Warm Up () ##
+## Warm Up (535 Pts) ##
+
+![TASK](https://i.imgur.com/JM2d9Dd.jpg)
+
 
 In this task we are given a simple web page showing an include statement , the idea is simple this is a local file inclusion LFI and our goal is to read flag.php content so we will use php wrappers .
 
@@ -9,7 +12,10 @@ In this task we are given a simple web page showing an include statement , the i
 > url/_=php://filter/convert.base64-encode/resource=flag.php
 we will then have the flag.php content encoded with base64 , so after decoding it we get our flag 
 
-## Up V2 () ##
+## No More Warm Up (884 Pts) ##
+
+![TASK](https://i.imgur.com/SbuUjoK.jpg)
+
 
 In this task we are given an upload page, in fact there are two solutions 
 
@@ -47,8 +53,14 @@ and finally after uploading the foo.jpg file our payload will be :
 Now the foo.php will be unzipped and we will have the possibility to execute any command with 
 >foo.php?command=YourCommandHere(ls first to list all files and then cat the flag file)
 
-## ##
+## My Hero (884 Pts) ##
+
+![TASK](https://i.imgur.com/iKcmReS.jpg)
+
 We are given a page with php code inside , there are two conditions we need to bypass to have our beloved flag , 
+
+![TASK](https://i.imgur.com/KdtGnwn.png)
+
 
 - First check :
 > if(file_get_contents(@$_GET['__'])==="Kahla is my hero")
@@ -64,7 +76,11 @@ We will exploit php type juggling, in php NULL==0 will return True so we will tr
 
 And don't forget to write the sentence "Kahla is my hero" in the body of the Http request(you can use burp to facilitate things)
 
-## No Clues () ##
+## No Clues (1000 Pts) ##
+
+![TASK](https://i.imgur.com/xUL2HVO.jpg)
+
+
 In this task we got a picture of the admin connecting to a web server through proxies so we can think that maybe we will use X-forwarded-for http header , You can read about it here [LINK](https://en.wikipedia.org/wiki/X-Forwarded-For)
 
 ![TASK](https://i.imgur.com/aBTtnLy.jpg)
@@ -83,7 +99,10 @@ Bingo we are now connected as an admin and we have a simple web page that pings 
 we can have an RCE , so our last payload is 
 >12;cat z21851ddfde521782z8
 
-## More Than A Crush 2 () ##
+## More Than A Crush 2 (991 Pts) ##
+
+![TASK](https://i.imgur.com/ZeMhn9B.jpg)
+
 
 In this Forensics task , we were given a wireshark capture ,each ICMP packet of type 0 hold within it some raw data that's why we ll extract it using scapy library in python , concatenate all this data and then decode it 
 
@@ -119,10 +138,16 @@ with open("youuupi.zip","wb") as file:
 ```
 Finally you only have to unzip the extracted file and then use strings tool to have the flag
 
-## ##
+## Chonin LvL (713 Pts) ##
+
+![TASK](https://i.imgur.com/PxApLp2.jpg)
+
+
 This task is pretty simple , we have a pcap file of a handshake so we need to get the password of this access point in order to submit it, we will launch a dictionary attack
 
 >aircrack-ng <filename>.pcap -w /usr/share/wordlists/rockyou.txt
 
 And Bingo the password is ***gohan123***
-  
+
+## ##
+I hope you enjoyed the tasks and learned from them, i apologize again for the lack of details , contact me if you faced any problems 
