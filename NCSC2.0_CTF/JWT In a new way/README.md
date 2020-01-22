@@ -75,6 +75,8 @@ We can all notice that it's an ssrf but:
 Finally i used this payload that bypassed all the filters below :
 > http://0x7f000001/flag.txt
 
+I used the hexadecimal format of local ip address :D 
+
 And Bingo we have our flag but it's encrypted 
 ![CRYPT](https://imgur.com/cFehJVI.png)
 
