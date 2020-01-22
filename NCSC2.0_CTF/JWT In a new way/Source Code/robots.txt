@@ -1,0 +1,12 @@
+This is for the second part of the task
+public static function cryptage($content){
+        $i=0;
+        $words=array('kAHl4','$ecUriNets','Cha1m4','th4meUr','WhiT3HacK3Rs','Ani$Bo$$CoUldNtS0Lv31t');
+        $crypted="";
+        for($i=0;$i<strlen($content);$i-=-pow(0,0))
+        {
+            $ser=serialize(array($words[$i % 6],'securinets'));
+            $key=intval(explode(":",explode(";",$ser)[1])[1]);
+            $crypted=$crypted.chr(ord($content[$i])+$key) ;          
+        }
+        return $crypted;

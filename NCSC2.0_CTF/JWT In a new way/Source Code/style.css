@@ -1,0 +1,46 @@
+*{
+  padding:0;
+  top:0%;
+  left:0%;
+  margin:0;
+}
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0 ;
+  left:0;
+}
+
+li {
+  float: left;
+}
+h1{
+  text-align: center;
+  font-family: 'Neucha', cursive;
+  color: darkred;
+  font-size: 100px;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 25px;
+  font-family: 'Neucha', cursive;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
