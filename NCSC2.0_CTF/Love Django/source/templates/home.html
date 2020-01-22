@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Icons font CSS-->
+    <link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    {% load static %}
+    <link href="{%static "css/main.css" %}" rel="stylesheet" media="all">
+    <title>Shinobi Platform</title>
+</head>
+<body>
+    <style>ul,p{
+        color: rgb(221, 202, 29);
+}
+p::before { 
+            content: "\A"; 
+            white-space: pre; 
+        } 
+        blockquote {
+    font-family:Georgia,"Times New Roman",Times,serif;
+    font-style:italic;
+    background:url(right-quote.gif) no-repeat right bottom;
+    text-indent:-25px;
+    padding-right:25px;
+    padding-left:25px;
+    color:rgb(248, 214, 21);
+    text-align:justify;
+}
+
+blockquote:first-letter {
+    background:url(left-quote.gif) no-repeat left top;
+    padding-left:25px;
+    font-size:1.4em;
+}
+        </style>
+ <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+                <div class="card card-3">
+                        <div class="card-heading"></div>
+                        <div class="card-body">
+                                <h2 style="text-align: center; font-size: 40px;" class="title"> Shinobis Platform</h2>
+                                <p><cite>Uchiha Obito</cite> Said :</p>
+                                <blockquote>In the ninja world, those who don't follow the rules are trash. But, those who abandon their friends are even worse than trash.</blockquote>
+                    <form action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <div class="select-dropdown"></div>
+<br>
+        <input type="submit" class="btn btn--pill btn--green" value="Generate">
+    </form>
+<br><br>
+<p style="text-align: center;color: white;">------------------------------------------</p><br>
+<h2 class="title">Export Your ID</h2>
+<button class="btn btn--pill btn--green" onclick="window.location.href = '/download/';">Export ID</button>
+<br> <br>
+<p style="text-align: center;color: white;">------------------------------------------</p><br>
+
+<h2 class="title">Import Your ID</h2>
+<div style="text-align:center;">
+<form enctype="multipart/form-data" method="post" action="{%url 'upload'%} ">
+    {% csrf_token %}
+    {{upload}} <br><br>
+<input type="submit" class="btn btn--pill btn--green" value="Upload">
+</form>
+</div>
+<br>
+<p style="text-align: center;">{{msg}}</p>
+
+<p style="text-align: center;color: white;">------------------------------------------</p><br>
+<h2 class="title">Your ID</h2>
+{%for titre,value in dict%}
+<ul>
+<li><strong>{{titre}}</strong> : {{value}}</li>
+</ul>
+{%endfor%}
+</div>
+</div>
+</div>
+</div>
+  <!-- Jquery JS-->
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <!-- Vendor JS-->
+  <script src="/static/vendor/select2/select2.min.js"></script>
+  <script src="/static/vendor/datepicker/moment.min.js"></script>
+  <script src="/static/vendor/datepicker/daterangepicker.js"></script>
+
+  <!-- Main JS-->
+  <script src="/static/js/global.js"></script>
+
+</body>
+</html>
