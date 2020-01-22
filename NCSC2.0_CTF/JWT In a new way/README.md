@@ -71,6 +71,7 @@ It's a web application that crypts a txt file and after some tries i figured tha
 We can all notice that it's an ssrf but:
 - file protocol is filtered we only can use http or https protocol
 - localhost,127.0.0.1,127.0.1,the octal form of ip , and even ipv6 localhost address are filtered
+
 Finally i used this payload that bypassed all the filters below :
 > http://0x7f000001/flag.txt
 
