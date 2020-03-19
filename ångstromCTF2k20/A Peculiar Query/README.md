@@ -75,7 +75,7 @@ app.listen(port, function() {
 It's pretty obvious that we have an sql injection here ( we are concatenating the user input )
 > 	const ret = await client.query(`SELECT name FROM Criminals WHERE name ILIKE '${q}%';`);
 
-But as we can see some filters are here :'( these characters are filtered : [',-,",.] , after some tries i have figured that it will impossible to bypass 
+But as we can see some filters are here :'( these characters are filtered : [',-,",.] , after some tries i have figured that it will be impossible to bypass 
 them so i started looking to some JS tricks.
 As we can see the filter function is looping over our input and checks if there are some prohibited characters and then it will replace 
 them with "*" , For example if we type 
