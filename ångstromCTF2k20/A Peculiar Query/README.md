@@ -132,7 +132,7 @@ will let us pass !
 
 **FILTERS BYPASSED SUCCESSFULLY**
 
-To test the number of q parameters and debug the app , i changed a little bit the source code and hosted the web app locally , you can find the modified source code **HERE** if you want to test :D
+To test the number of q parameters and debug the app , i changed a little bit the source code and hosted the web app locally , you can find the modified source code **[HERE](https://github.com/kahla-sec/CTF-Writeups/blob/master/%C3%A5ngstromCTF2k20/A%20Peculiar%20Query/app.js)** if you want to test :D
 
 ![TASK](https://imgur.com/upRUoxR.png)
 
