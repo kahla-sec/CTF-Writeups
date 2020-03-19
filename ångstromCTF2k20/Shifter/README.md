@@ -8,5 +8,5 @@ When we connect to the netcat service we get this message
 
 So the task is pretty simple , it just needs some coding skills , here is my solver
 
-## **[HERE]()**
+## **[HERE](https://github.com/kahla-sec/CTF-Writeups/blob/master/%C3%A5ngstromCTF2k20/Shifter/exploit.py)**
 
