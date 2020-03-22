@@ -39,7 +39,7 @@ Let's proceed , it seems that the index.php is pretty safe ,let's take a look at
 
 ![TASK](https://imgur.com/ytcYYQQ.png)
 
-OMG :'( 499 lines , that was so discouraging @Emperors :( anyway after scrolling around and reading the code , we can somehow understand the behaviour of the website,
+OMG :'( 499 lines , that was so discouraging @Emperors :( but we needed that flag to have the 10th place xD anyway after scrolling around and reading the code , we can somehow understand the behaviour of the website,
 when we enter the ip address it asks the Virus Total API for the results and then there's the persistence functionality that saves the results in the database and then when we enter the same ip address again it will loads
 the results from the database .
 
