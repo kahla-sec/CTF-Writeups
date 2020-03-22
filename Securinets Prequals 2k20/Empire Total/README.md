@@ -95,7 +95,7 @@ We have control over the **url['URL']** parameter (the url we scan in VirusTotal
 1. The url encoding **%20** that will be interpreted with the SQL query so we have to find another way in our payload instead of white spaces which is a well known bypass:  **/\*\*/**
 2. The second thing faced me when i was solving the challenge , we can't use **-- -** to equilibrate the SQL query so we will have to find a solution to equilibrate it
 
-In order to test the injection locally i have created this small script that connects to my local DB and executes the same query, you can find it **[HERE](https://github.com/expressjs/express/issues/1824)** 
+In order to test the injection locally i have created this small script that connects to my local DB and executes the same query, you can find it **[HERE](https://github.com/kahla-sec/CTF-Writeups/blob/master/Securinets%20Prequals%202k20/Empire%20Total/test.py)** 
 
 Finally I opted to this solution, here is the URL we will scan :
 > http://100.26.206.184/?u=',(select/**/1),(select/**/2)),('102','a
