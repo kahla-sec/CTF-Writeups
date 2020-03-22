@@ -143,6 +143,6 @@ DBName : MySecretDatabase
 
 Yees We did it , **FLAG** : Securinets{EmpireTotal_Pwn3D_fr0m_Th3_0th3r_S1de}
 
-I have really liked the idea of the challenge, it's really creative , i want to thanks Securinets technical team for these fun tasks and awesome CTF and of course the author @TheEmperors.
+I have really liked the idea of the challenge, it's really creative , i want to thank Securinets technical team for these fun tasks and awesome CTF and of course the author @TheEmperors.
 
 I hope you liked the writeup if you have any questions don't hesitate to contact me **Twitter** : @BelkahlaAhmed1 , finally i can sleep in peace after these 24 hours xd
