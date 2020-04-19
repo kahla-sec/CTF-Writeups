@@ -21,5 +21,5 @@ p.sendline(payload)
 p.interactive()
 
 ```
-**Note:** Here is the link of the binary [HERE]()
+**Note:** Here is the link of the binary [LINK](https://github.com/kahla-sec/CTF-Writeups/blob/master/UMDCTF%202020/Easy%20Right%3F/baby) and the [EXPLOIT](https://github.com/kahla-sec/CTF-Writeups/blob/master/UMDCTF%202020/Easy%20Right%3F/exp1.py)
 Any questions you can DM on twitter @BelkahlaAhmed1 , thank you :D
