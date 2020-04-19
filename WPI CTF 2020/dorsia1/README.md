@@ -32,5 +32,6 @@ for i in range(69,90):
         except Exception:
                 continue
 ```
-**Note:** The binary link is [HERE]()
+**Note:** The source code link is [HERE](https://github.com/kahla-sec/CTF-Writeups/blob/master/WPI%20CTF%202020/dorsia1/task.c)
+
 If you have any questions you can contact me on twitter @BelkahlaAHmed1
