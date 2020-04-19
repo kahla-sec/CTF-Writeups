@@ -45,6 +45,6 @@ p.interactive()
 
 ```
 
-**Note:** : Here is the [binary]() and the [libc]()
+**Note:** : Here is the [binary](https://github.com/kahla-sec/CTF-Writeups/blob/master/WPI%20CTF%202020/dorsia3/nanoprint) and the [libc]()
 
 For any questions you can contact me on twitter @BelkahlaAhmed1 and thank you :D
