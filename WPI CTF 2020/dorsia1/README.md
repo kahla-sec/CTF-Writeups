@@ -6,7 +6,7 @@ we are given the source code , it's a buffer overflow but we don't know the offs
 
 ![CODE](https://imgur.com/sj0QL9v.png)
 
-Here is my full exploit , i'll share a detailed writeup about dorsia1 and dorsia3 in the next few days on my personal website so stay tuned (My twitter @BelkahlaAhmed1)
+Here is my full exploit , i'll share a detailed writeup about dorsia3 in the next few days on my personal website so stay tuned (My twitter @BelkahlaAhmed1)
 
 ```python
 from pwn import *
