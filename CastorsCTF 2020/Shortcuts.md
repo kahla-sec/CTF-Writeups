@@ -2,7 +2,7 @@
 
 ![TASK](https://imgur.com/eBGWBx5.png)
 
-We are given a simple web app written in Golang where we have shortcuts for some commands executed on the server, after digging around we can notice that the server is returning the output of go run FILE.go ( by having a look at processes)
+We are given a simple web app written in Golang where we have shortcuts for some commands executed on the server, after digging around we can notice that the server is returning the output of the command **go run foo.go** ( by having a look at processes)
 so if we upload our go script that executes any commands for us we can achieve a command execution :D But that's not the case if we try to upload any file it won't be executed , i think that there's a whitelist of the accepted filenames.
 
 If we try to execute the users shortcuts we will get the error below , so if we upload a file named users.go and then click users, our script will be executed and we will bypass this whitelist 
