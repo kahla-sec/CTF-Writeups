@@ -311,7 +311,7 @@ And Bingo we got our flag
 
 ### Other Writeups ###
 
-Super Guesser Team writeups, they solved all web challenges :D [LINK](https://github.com/Super-Guesser/ctf/tree/master/Fword CTF 2020/writeups)
+Super Guesser Team writeups, they solved all web challenges :D [LINK](https://github.com/Super-Guesser/ctf/tree/master/Fword%20CTF%202020/writeups)
 
 Hexion Team Otaku task writeup [LINK](https://github.com/om3r-v/CTF-solutions/tree/master/FwordCTF/otaku)
 
